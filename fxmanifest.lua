@@ -1,19 +1,20 @@
 fx_version("cerulean")
 games({ "gta5" })
 lua54("yes")
+version("1.0.0")
 client_script("@pulsar-core/exports/cl_error.lua")
 client_script("@pulsar-pwnzor/client/check.lua")
 
 client_scripts({
-	"client/component.lua",
-	"client/cl_chat.lua",
+  "client/component.lua",
+  "client/cl_chat.lua",
 })
 
 server_scripts({
-	"server/component.lua",
-	"server/sv_chat.lua",
-	"server/utils.lua",
-	"server/commands.lua",
+  "server/component.lua",
+  "server/sv_chat.lua",
+  "server/utils.lua",
+  "server/commands.lua",
 })
 
 ui_page("ui/dist/index.html")
